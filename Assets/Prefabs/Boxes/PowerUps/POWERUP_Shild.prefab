@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6986990772922126238}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: POWERUP_Shild
-  m_TagString: Untagged
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,11 +93,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 40e7e29baaa32479db83b748149ff5ac, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 40e7e29baaa32479db83b748149ff5ac, type: 3}
       propertyPath: m_TagString
-      value: caja
+      value: PowerUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40e7e29baaa32479db83b748149ff5ac, type: 3}
@@ -140,6 +140,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.889618, y: 4.896109, z: 4.838969}
   m_Center: {x: 0.03427124, y: -0.010378599, z: -0.013114929}
+--- !u!114 &3099083242969773923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8788652118917061020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5befa71815a4b639ab6749294da75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedGyro: 2
 --- !u!114 &7768412180067012645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,16 +167,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nuevoEstado: {fileID: 4272347488520336326, guid: e45cd08921f364daf8464820a192061a, type: 3}
   explosion: {fileID: 41051931880340153, guid: 9d492a4a7c5664d10abff6001d35afc5, type: 3}
---- !u!114 &3099083242969773923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8788652118917061020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5befa71815a4b639ab6749294da75a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpeedGyro: 2

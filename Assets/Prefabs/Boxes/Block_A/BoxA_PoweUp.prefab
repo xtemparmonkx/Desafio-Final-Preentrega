@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8235007707360829832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BoxA_PoweUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3839543150471741415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: generador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cubo fix transform
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 40e7e29baaa32479db83b748149ff5ac, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40e7e29baaa32479db83b748149ff5ac, type: 3}
 --- !u!4 &6918119272297622832 stripped
@@ -180,7 +184,7 @@ MonoBehaviour:
   explosion: {fileID: 41051931880340153, guid: 9d492a4a7c5664d10abff6001d35afc5, type: 3}
   generador: {fileID: 7518416407915787313}
   PowerUp:
-  - {fileID: 8852841160494523881, guid: 7cb7140c751414e49a2d903f4ea43094, type: 3}
-  - {fileID: 8852841160494523881, guid: 7cb7140c751414e49a2d903f4ea43094, type: 3}
-  - {fileID: 8852841160494523881, guid: 7cb7140c751414e49a2d903f4ea43094, type: 3}
-  - {fileID: 8852841160494523881, guid: 7cb7140c751414e49a2d903f4ea43094, type: 3}
+  - {fileID: 5202193828231641029, guid: 186672ce3b54741089388135538bf597, type: 3}
+  - {fileID: 3413933369288897791, guid: d9322e061bed74179b829ac70f4ac33d, type: 3}
+  - {fileID: 6207148335842485396, guid: 691398e2e1f4e4289b0667ae160a2571, type: 3}
+  - {fileID: 8835397784955765028, guid: 7f7d77e9af9384ea195320b0c9f019db, type: 3}
