@@ -8,6 +8,7 @@ public class Final : MonoBehaviour
     public Transform Player;
     public float Distance;
     public float SpeedRotation;
+    public float stopDistance;
     public UnityEngine.AI.NavMeshAgent Enemy;
 
     RaycastHit objectHit;
@@ -25,7 +26,7 @@ public class Final : MonoBehaviour
         {
             Enemy.SetDestination(Player.transform.position);
             Vector3 lTargetDir = Player.position - transform.position;
-            lTargetDir.y = 1f;
+            lTargetDir.y = stopDistance;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(lTargetDir), Time.time * SpeedRotation);
         }
         
