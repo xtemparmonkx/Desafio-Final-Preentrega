@@ -25,9 +25,10 @@ public class Final : MonoBehaviour
         {
             Enemy.SetDestination(Player.transform.position);
             Vector3 lTargetDir = Player.position - transform.position;
-            lTargetDir.y = 0.0f;
+            lTargetDir.y = 1f;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(lTargetDir), Time.time * SpeedRotation);
-        }                
+        }
+        
     }
    
 }
