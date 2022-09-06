@@ -29,8 +29,7 @@ Transform:
   m_LocalPosition: {x: -3.9707198e-15, y: 1.8389925, z: 0.13895406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 545850857745326582}
+  m_Children: []
   m_Father: {fileID: 541090092853769176}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -108,12 +107,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545850857745326583}
   m_LocalRotation: {x: -0, y: 0.00000035762784, z: -0, w: 1}
-  m_LocalPosition: {x: 0.11653764, y: 0.11582303, z: 4.1449833}
+  m_LocalPosition: {x: 0.11653687, y: 1.9548155, z: 4.2839384}
   m_LocalScale: {x: 8.57375, y: 8.5737505, z: 8.57375}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 541321233569787710}
-  m_RootOrder: 0
+  m_Father: {fileID: 541090092853769176}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
 --- !u!1 &547018360219440910
 GameObject:
@@ -127,8 +126,8 @@ GameObject:
   - component: {fileID: 570601060201331092}
   - component: {fileID: 558568751944949348}
   - component: {fileID: 545850859184061351}
-  - component: {fileID: 545850859184061349}
   - component: {fileID: 2683603742698331862}
+  - component: {fileID: 4369750102908185243}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Enemy
@@ -149,6 +148,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 541321233569787710}
+  - {fileID: 545850857745326582}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
@@ -215,29 +215,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9532464, y: 2.2734654, z: 2.3173606}
   m_Center: {x: 0, y: 1.3488458, z: 0.13676202}
---- !u!114 &545850859184061349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547018360219440910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fc33723e30a7ac4e8f0b311275049d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pivot: {fileID: 541090092853769176}
-  Player: {fileID: 0}
-  SpawnBullet: {fileID: 545850857745326582}
-  Enemy: {fileID: 547018360219440910}
-  Explode: {fileID: 5464420192610841611, guid: 2110e073e0fecea45a7a612ab492354b, type: 3}
-  Shell: {fileID: 5515593127021050611, guid: 1e06b4744fed8410db2c2d82f64ee0ea, type: 3}
-  ShootLoop: 1.93
-  Distance: 6.89
-  SpeedRotation: 2.58
-  speed: 100
-  speedBullet: 30
 --- !u!114 &2683603742698331862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,3 +229,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damage: 25
+--- !u!114 &4369750102908185243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547018360219440910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7b4fe6c7e8bdf4ca2b5f96a32acf93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 7c6efb1a7b594704f82dcd417274dd53, type: 2}
+  Pivot: {fileID: 541090092853769176}
+  Player: {fileID: 0}
+  SpawnBullet: {fileID: 545850857745326582}
+  Enemy: {fileID: 547018360219440910}
+  Explode: {fileID: 5464420192610841611, guid: 2110e073e0fecea45a7a612ab492354b, type: 3}
+  Shell: {fileID: 5515593127021050611, guid: 1e06b4744fed8410db2c2d82f64ee0ea, type: 3}
